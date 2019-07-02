@@ -69,15 +69,19 @@ public class Student {
 						if (detailChoice.equals("HOMETOWN")) {
 							detailChoice = "FAVORITE FOOD";
 							getStudentsInfo(userChoice, students, hometown, favFood, detailChoice);
+							
 						} else {
 							detailChoice = "HOMETOWN";
 							getStudentsInfo(userChoice, students, hometown, favFood, detailChoice);
+							
 						}
 					}else {
 						System.out.println("Invalid choice. Try Again.");
 						System.out.println("Would you like to know more? (enter y or n)");
 						choice = in.next().toUpperCase().charAt(0);
 					}
+					System.out.println("Would you like to know more? (enter y or n)");
+					choice = in.next().toUpperCase().charAt(0);
 
 				}
 			} catch (InputMismatchException | NumberFormatException ex) {
